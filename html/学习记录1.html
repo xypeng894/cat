@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习HTML第1天</title>
+</head>
+<body>
+    <h2>&lt;!DOCTYPE&gt;标签，lang语言，charset字符集</h2>
+    <ol> 
+        <li>&lt;!DOCTYPE&gt;标签</li>
+        文档类型声明，作用就是告诉浏览器使用哪种版本来显示网页
+        <ul>
+            <li>声明位于文档中最前面的位置，处于&lt;html&gt;标签之前</li>
+            <li>不是一个HTML标签，是文档类型声明标签</li>
+        </ul>
+        <li>lang语言</li>
+        用来定义当前文档显示的语言
+        <ul>
+            <li>en定义语言为英语</li>
+            <li>zh-CN定义语言为中文</li>
+        </ul>
+        其实对于文档显示来说，定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文<br>
+        这个属性对于浏览器和搜索引擎有作用
+        <li>charset字符集</li>
+        字符集十多个字符的集合，一遍计算机能够识别和存储各种文字<br>
+        在&lt;head&gt;标签内，可以通过&lt;meta&gt;标签的charset属性来规定HTML文档应该使用哪种字符编码<br>
+    </ol>
+    <br><br><br>
+    <h2>HTML常用标签</h2>
+    <table border="2">
+        <tr>
+            <th rowspan="6">标题标签</th>
+            <th>&lt;h1&gt;</th>
+            <th>一级标题</th>
+        </tr>
+        <tr>
+            <th>&lt;h2&gt;</th>
+            <th>二级标题</th>
+        </tr>
+        <tr>
+            <th>&lt;h3&gt;</th>
+            <th>三级标题</th>
+        </tr>
+        <tr>
+            <th>&lt;h4&gt;</th>
+            <th>四级标题</th>
+        </tr>
+        <tr>
+            <th>&lt;h5&gt;</th>
+            <th>五级标题</th>
+        </tr>
+        <tr>
+            <th>&lt;h6&gt;</th>
+            <th>六级标题</th>
+        </tr>
+
+        <tr>
+            <th>段落标签</th>
+            <th>&lt;p&gt;</th>
+            <th colspan="2">用于定义段落</th>
+        </tr>
+        <tr>
+            <th>换行标签</th>
+            <th>&lt;br&gt;</th>
+            <th colspan="2"></th>
+        </tr>
+        <tr>
+            <th rowspan="4">文本格式化标签</th>
+            <th>&lt;b&gt; &lt;strong&gt;</th>
+            <th><b>粗体</b></th>
+        </tr>
+        <tr>
+            <th>&lt;i&gt; &lt;em&gt;</th>
+            <th><i>斜体</i></th>
+        </tr>
+        <tr>
+            <th>&lt;u&gt; &lt;ins&gt;</th>
+            <th><u>下划线</u></th>
+        </tr>
+        <tr>
+            <th>&lt;del&gt; &lt;s&gt;</th>
+            <th><del>删除线</del></th>
+        </tr>
+        <tr>
+            <th rowspan="2">盒子标签</th>
+            <th>&lt;div&gt;</th>
+            <th>用来布局，一行只能放一个&lt;div&gt;。大盒子</th>
+        </tr>
+        <tr>
+            <th>&lt;span&gt;</th>
+            <th>用来布局，一行可以有多个&lt;span&gt;</th>
+        </tr>
+        <tr>
+            <th>图像标签 <a href="#图像标签的属性">属性</a></th>
+            <th>&lt;img&gt;</th>
+            <th>src是&lt;img&gt;标签的必须属性，用于指定图像的路径和文件名</th>
+        </tr>
+        <tr>
+            <th>超链接标签 <a href="#链接标签的属性">属性</a> <a href="#链接分类">分类</a></th>
+            <th>&lt;a&gt;</th>
+            <th>从一个页面链接到另一个页面</th>
+        </tr>
+    </table>
+    <h2 id="图像标签的属性">图像标签的属性</h2>
+    <table border="1">
+        <tr>
+            <th>属性</th>
+            <th>属性值</th>
+            <th>说明</th>
+        </tr>
+        <tr>
+            <th>src</th>
+            <th>图片路径</th>
+            <th>必须属性</th>
+        </tr>
+        <tr>
+            <th>alt</th>
+            <th>文本</th>
+            <th>替换文本，图像不能显示的文字</th>
+        </tr>
+        <tr>
+            <th>title</th>
+            <th>文本</th>
+            <th>提示文本，鼠标放到图像上，显示的文字</th>
+        </tr>
+        <tr>
+            <th>width</th>
+            <th>像素</th>
+            <th>设置图像的宽度</th>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>像素</th>
+            <th>设置图像的高度</th>
+        </tr>
+        <tr>
+            <th>border</th>
+            <th>像素</th>
+            <th>设置图像的边框粗细，一般用css进行设置</th>
+        </tr>
+    </table>
+    <h2 id="链接标签的属性">链接标签的属性</h2>
+    <table border="1">
+        <tr>
+            <th>属性</th>
+            <th>作用</th>
+        </tr>
+        <tr>
+            <th>href</th>
+            <th>用于指定连接目标的url地址，（必须属性）</th>
+        </tr>
+        <tr>
+            <th>target</th>
+            <th>用于指定连接页面的打开方式，其中_self为默认值，_blank为在新窗口中打开方式</th>
+        </tr>
+    </table>
+    <h2 id="链接分类">链接分类</h2>
+    <table border="1">
+        <tr>
+            <th>外部链接</th>
+            <th>https://www.baidu.com/</th>
+        </tr>
+        <tr>
+            <th>内部链接</th>
+            <th>index.html</th>
+        </tr>
+        <tr>
+            <th>空链接</th>
+            <th>#</th>
+        </tr>
+        <tr>
+            <th>下载链接</th>
+            <th>href地址是一个文件或者压缩包</th>
+        </tr>
+        <tr>
+            <th>锚点链接</th>
+            <th>href="#名字"，目标位置标添加id属性=名字</th>
+        </tr>
+    </table>
+    <h2>特殊字符</h2>
+    <img src="../images/html学习/特殊字符.jpg" alt="" width="60%">
+</body>
+</html>

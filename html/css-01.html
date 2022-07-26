@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习css第一天</title>
+    <style>
+        body {
+            font-family: '楷体';
+            font-size: 18px;
+        }
+        p {
+            color: darkblue;
+            font-size: 18px;
+        }
+        li {
+            color: cadetblue;
+        }
+        h2 {
+            font-family: 'Microsoft YaHei';
+            color: darkorange;
+        }
+        h4 {
+            font-family: 'Microsoft YaHei';
+            color: olivedrab;
+            font-weight: 400;
+        }
+        .pink {
+            color: pink;
+        }
+        .red {
+            color: red;
+        }
+        table {
+            width: 80%;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h2>1. css规则由两部分构成：选择器、一条或者多条声明</h2>
+    <ul>
+        <li class="pink">选择器是用于指定css央视的html标签，花括号里面是对该对象设置的具体样式</li>
+        <li class="pink">属性和属性值是以“键值对”的形式出现</li>
+        <li class="pink">属性是对特定的对象设置的样式属性，例如字体大小、文本颜色等</li>
+        <li>属性和属性值之间用英文冒号分开</li>
+        <li>多个键值对之间用英文分号进行区分</li>
+    </ul>
+    <h2>2. css选择器的作用</h2>
+    <p>
+        根据不同的需求把不同的标签选择出来，这就是选择器的作用，简单来讲，就是选择标签的<br>
+        选择器分为基础选择器和复合选择器两个大类
+    </p>
+    
+    <ul>
+        <li>基础选择器是由单个选择器组成的</li>
+        <li>基础选择器又包括：标签选择器、类选择器、id选择器和通配符选择器</li>
+    </ul>
+    <p>id选择器：样式由#定义，结构由id调用，只能调用一次</p>
+    <h4>2.1 id选择器和类选择器的区别</h4>
+    <ul>
+        <li>类选择器好比人的名字，一个人可以有多个名字，同时一个名字也可以被多个人使用</li>
+        <li>id选择器好比人的身份证号码，不得重复</li>
+    </ul>
+    <h4>2.2 通配符选择器</h4>
+    <p>
+        在css中，通配符选择器使用“*”定义，它表示选取页面中的所有元素
+    </p>
+    <h2>3. css字体属性</h2>
+    <p>
+        用于定义字体系列、大小、粗细、文本样式
+    </p>
+    <ul>
+        <li>font-family 定义文本的字体系列</li>
+        <li>font-size 定义字体的大小</li>
+        <li>font-weight 设置文本字体的粗细 normal(400) bold(700)</li>
+        <li>font-style 设置文本的风格 normal italic</li>
+        <li class="red">
+            复合属性：简写的方式<br>
+            font: font-style font-weight font-size/line-height font-family <br>
+            <ul class="pink">
+                <li>注意：使用font属性时，不能更换顺序，并且各个属性间以空格隔开</li>
+                <li>不需要的属性可以省略，但必须保留font-size和font-family属性，否则font属性不起作用</li>
+            </ul>
+            
+        </li>
+    </ul>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>属性</th>
+                <th>表示</th>
+                <th>注意点</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>font-size</td>
+                <td>字号</td>
+                <td>我们通常用的单位是px像素，一定要跟上单位</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>字体</td>
+                <td>实际工作中按照团队约定来写字体</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>字体粗细</td>
+                <td>加粗700或bold；不加粗是normal或400 记住数字不要跟单位</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>字体样式</td>
+                <td>倾斜是italic；不倾斜是normal</td>
+            </tr>
+            <tr>
+                <td>font</td>
+                <td>字体连写</td>
+                <td>1.字体连写是有顺序的，不能随意换位置 2.字号和字体必须同时出现</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>4. css文本属性</h2>
+    <p>
+        css text(文本)属性可以定义文本的外观，比如文本的颜色、对齐文本、装饰文本、文本缩进、行间距等
+    </p>
+</body>
+</html>
